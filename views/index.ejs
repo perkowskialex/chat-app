@@ -2,13 +2,16 @@
 <html>
   <head>
     <title>Chat App</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1>Chat App</h1>
     <p>WE FINNA CHAT APP</p>
-    <p>User Name: <input class='username'></p>
-    <p>Send Message: </p><textarea class='message'></textarea><button class ='send'>Send</button>
+    <p>User Name: <input id="username" /></p>
+    <p>Send Message:</p>
+    <textarea id="message"></textarea> <br />
+    <button id='send'>Send Message</button>
+    <ul id="messages"></ul>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/javascripts/app.js"></script>
   </body>
